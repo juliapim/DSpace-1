@@ -8,6 +8,8 @@
 .banner img {background-color: #FFFFFF;padding:15px;margin:20px;}
 .brand {padding-top: 30px;}
 .brand h4 {color: #999999}
+.blue{font-weight: bold; color: #005a87;}
+.dissco-main{display: flex;justify-content: center;align-items: center;}
 ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}

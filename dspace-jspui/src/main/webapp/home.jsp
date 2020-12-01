@@ -77,7 +77,7 @@
         <%= topNews %>
 	</div>
 
-<div class="row">
+<div class="row dissco-main">
 <%
 if (submissions != null && submissions.count() > 0)
 {
@@ -164,9 +164,9 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-4">
+<!-- <div class="col-md-4">
     <%= sideNews %>
-</div>
+</div> -->
 </div>
 <div class="container row">
 <%
