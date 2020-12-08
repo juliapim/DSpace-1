@@ -43,12 +43,19 @@
             <a href="http://ww"><img
                                     src="<%= request.getContextPath() %>/image/eosc-logo.png"
                                    height="30px" alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
-                                <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
+			                                  
+                                <!-- <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
                                 <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
-                                <a href="<%= request.getContextPath() %>/htmlmap"></a></p>
-                                </div>
-			</div>
+                                <a href="<%= request.getContextPath() %>/htmlmap"></a></p> -->
+                                <a href="http://ww" id="eu"><img
+                                    src="<%= request.getContextPath() %>/image/european-union-logo.png"
+                                   height="44px" margin-left="18px" alt="Logo EU" /></a>    
+                            
+            </div>
+            <div id="designedby-2" class="container text-muted">
+            <p>H2020-INFRADEV-2019-2020 – Grant Agreement No. 871043.</p>
+                            <p>Funded by the Horizon 2020 Framework Programme of the European Union</p>
+                        </div>
     </footer>
     </body>
 </html>

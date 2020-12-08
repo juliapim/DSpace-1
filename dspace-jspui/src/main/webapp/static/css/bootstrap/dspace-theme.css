@@ -8,14 +8,16 @@
 .banner img {background-color: #FFFFFF;padding:15px;margin:20px;}
 .brand {padding-top: 30px;}
 .brand h4 {color: #999999}
-.blue{font-weight: bold; color: #005a87;}
+.blue{font-weight: bold; color: #164d98;}
 .dissco-main{display: flex;justify-content: center;align-items: center;}
 ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
-#designedby {padding: 5px;}
-#footer_feedback {padding-top: 12px;}
+#designedby {padding: 5px;justify-content: center; }
+#designedby-2 {flex-direction: column}
+#eu {margin-left: 18px;}
+/* #footer_feedback {padding-top: 12px;} */
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
 /* This magic gets the 16x16 icon to show up.. setting height/width didn't

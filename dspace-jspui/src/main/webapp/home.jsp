@@ -174,7 +174,9 @@ if (communities != null && communities.size() != 0)
 {
 %>
 	<div class="col-md-4">		
-               <h3><fmt:message key="jsp.home.com1"/></h3>
+               <h3>Communities in DiSSCo Knowledge Base
+				   <!-- <fmt:message key="jsp.home.com1"/> -->
+				</h3>
                 <p><fmt:message key="jsp.home.com2"/></p>
 				<div class="list-group">
 <%

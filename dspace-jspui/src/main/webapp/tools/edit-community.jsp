@@ -91,7 +91,8 @@
         admins = community.getAdministrators();
     }
 %>
-
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea' });</script>
 <dspace:layout style="submission" titlekey="jsp.tools.edit-community.title"
 		       navbar="<%= naviAdmin %>"
 		       locbar="link"
