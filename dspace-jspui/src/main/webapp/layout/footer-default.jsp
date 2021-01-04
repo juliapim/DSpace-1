@@ -40,16 +40,18 @@
             <%-- Page footer --%>
              <footer class="navbar navbar-inverse navbar-bottom">
              <div id="designedby" class="container text-muted">
-            <a href="http://ww"><img
-                                    src="<%= request.getContextPath() %>/image/eosc-logo.png"
-                                   height="30px" alt="Logo CINECA" /></a>
 			                                  
                                 <!-- <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
                                 <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
                                 <a href="<%= request.getContextPath() %>/htmlmap"></a></p> -->
-                                <a href="http://ww" id="eu"><img
+                                <a href="" id="eu"><img
                                     src="<%= request.getContextPath() %>/image/european-union-logo.png"
-                                   height="44px" margin-left="18px" alt="Logo EU" /></a>    
+                                   width="66px" margin-left="18px" alt="Logo EU" />
+                                </a>   
+                                   <a href="https://www.eosc-portal.eu/"><img
+                                    src="<%= request.getContextPath() %>/image/eosc-logo.png"
+                                   width="90px" alt="Logo EOSC" />
+                                   </a> 
                             
             </div>
             <div id="designedby-2" class="container text-muted">

@@ -1,11 +1,8 @@
 <%--
-
     The contents of this file are subject to the license and copyright
     detailed in the LICENSE and NOTICE files at the root of the source
     tree and available online at
-
     http://www.dspace.org/license/
-
 --%>
 
 <%--
@@ -112,7 +109,6 @@
             }
             out.println("</ul>");
         }
-
         // Get the sub-communities in this community
         List<Community> comms = (List<Community>) subcommunityMap.get(c.getID().toString());
         if (comms != null && comms.size() > 0)
@@ -155,7 +151,6 @@
 %>
 	<h1><fmt:message key="jsp.community-list.title"/></h1>
 	<p><fmt:message key="jsp.community-list.text1"/></p>
-
 <% if (communities.size() != 0)
 {
 %>
