@@ -30,8 +30,8 @@
             </div>
         </div>
         <div class="row">
-        <div class="col-md-6">
-        	<input type="submit" class="btn btn-success pull-right" name="login_submit" value="<fmt:message key="jsp.components.login-form.login"/>" tabindex="3" />
+        <div class="col-md-6" id="log-in">
+          <input type="submit" class="btn btn-success pull-right"  name="login_submit" value="<fmt:message key="jsp.components.login-form.login"/>" tabindex="3" />
         </div>
         </div>
   		<p><a href="<%= request.getContextPath() %>/forgot"><fmt:message key="jsp.components.login-form.forgot"/></a></p>

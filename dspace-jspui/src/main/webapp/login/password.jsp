@@ -21,7 +21,7 @@
 
 <dspace:layout navbar="default" locbar="off" titlekey="jsp.login.password.title" nocache="true">
 	<div class="panel panel-primary" id="panel-login">
-        <div class="panel-heading" id="panel-login-inner"><fmt:message key="jsp.login.password.heading"/>
+        <div class="panel-heading" id="panel-login-inner">Log in to DiSSCo Knowledge Base
         <span class="pull-right"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") + \"#login\"%>"><fmt:message key="jsp.help"/></dspace:popup></span>
         </div>
 	    <dspace:include page="/components/login-form.jsp" />

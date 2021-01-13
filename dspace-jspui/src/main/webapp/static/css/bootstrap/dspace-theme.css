@@ -10,7 +10,8 @@
 .brand h4 {color: #999999}
 .blue{font-weight: bold; color: #164d98;}
 #panel-login{margin-top: 40px; }
-#panel-login-inner{background-color: #e9b820;}
+#log-in{width: 50%;}
+/* #panel-login-inner{background-color: #e9b820;} */
 .dissco-main{display: flex;justify-content: center;align-items: center;}
 ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
