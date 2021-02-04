@@ -61,7 +61,7 @@
         Bitstream logo = c.getLogo();
         if (showLogos && logo != null)
         {
-        	out.println("<a class=\"pull-left col-md-2\" href=\"" + request.getContextPath() + "/handle/" 
+        	out.println("<a class=\"pull-left col-md-2 image-coll\" href=\"" + request.getContextPath() + "/handle/" 
         		+ c.getHandle() + "\"><img class=\"media-object img-responsive\" src=\"" + 
         		request.getContextPath() + "/retrieve/" + logo.getID() + "\" alt=\"community logo\"></a>");
         }

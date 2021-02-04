@@ -13,6 +13,8 @@
 #log-in{width: 50%;}
 /* #panel-login-inner{background-color: #e9b820;} */
 .dissco-main{display: flex;justify-content: center;align-items: center;}
+.image-home{display: none;}
+.image-coll{display: none;}
 ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
