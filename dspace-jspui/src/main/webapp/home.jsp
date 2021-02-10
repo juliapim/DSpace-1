@@ -168,8 +168,24 @@ if (submissions != null && submissions.count() > 0)
 <!-- <div class="col-md-4">
     <%= sideNews %>
 </div> -->
+<%-- Search Box --%>
+<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right form-search">
+	<div class="form-group form-search-group">
+	  <input type="text" class="form-control input-search" placeholder="Search DiSSCo-Knowledgebase" name="query" id="tequery" size="25"/>
+	</div>
+	<button type="submit" class="btn btn-primary button-search"><span class="glyphicon glyphicon-search"></span></button>
+<%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
+<%
+		if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
+		{
+%>        
+		  <br/><a href="<%= request.getContextPath() %>/subject-search"><fmt:message key="jsp.layout.navbar-default.subjectsearch"/></a>
+<%
+		}
+%> --%>
+</form>
 </div>
-<div class="container row">
+<!-- <div class="container row">
 <%
 if (communities != null && communities.size() != 0)
 {
@@ -229,5 +245,5 @@ if (communities != null && communities.size() != 0)
 	<%@ include file="discovery/static-tagcloud-facet.jsp" %>
 </div>
 	
-</div>
+</div> -->
 </dspace:layout>

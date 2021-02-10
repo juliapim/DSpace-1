@@ -11,6 +11,11 @@
 .blue{font-weight: bold; color: #164d98;}
 #panel-login{margin-top: 40px; }
 #log-in{width: 50%;}
+.form-search{width: 100%; display: flex;
+    justify-content: center;}
+.form-search-group{width: 96%;}
+.input-search{width: 104%; height: 46px;}
+.button-search{width: 45px;}
 /* #panel-login-inner{background-color: #e9b820;} */
 .dissco-main{display: flex;justify-content: center;align-items: center;}
 .image-home{display: none;}
