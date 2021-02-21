@@ -166,6 +166,6 @@
 <% }
 %>
 <script>
-    console.log('hello')
+    console.log('faq')
 </script>
 </dspace:layout>

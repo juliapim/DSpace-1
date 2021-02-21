@@ -94,7 +94,7 @@
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
            <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
-                
+           <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.start\") %>"><fmt:message key="jsp.layout.navbar-default.start"/></dspace:popup></li>  
            <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
              <ul class="dropdown-menu">
@@ -119,6 +119,7 @@
             </ul>
           </li>
           <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
+         
        </ul>
 
  <% if (supportedLocales != null && supportedLocales.length > 1)
@@ -169,7 +170,11 @@
                <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
                <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
                <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
-
+               <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
+              <li><!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+                
+            </li>
 		<%
                 if (isAdmin || isCommunityAdmin || isCollectionAdmin) {
                 %>
@@ -191,6 +196,58 @@
              </ul>
            </li>
           </ul>
-          
+          <%-- Search Box --%>
+<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right form-search">
+	<div class="form-group form-search-group">
+	  <input type="text" class="form-control input-search" placeholder="Search DiSSCo-Knowledgebase" name="query" id="tequery" size="25"/>
+	</div>
+	<button type="submit" class="btn btn-primary button-search"><span class="glyphicon glyphicon-search"></span></button>
+<%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
+<%
+		if (ConfigurationManager.getBooleanProperty("webui.controlledvocabulary.enable"))
+		{
+%>        
+		  <br/><a href="<%= request.getContextPath() %>/subject-search"><fmt:message key="jsp.layout.navbar-default.subjectsearch"/></a>
+<%
+		}
+%> --%>
+</form>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+                
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    
+    </div>
 </div>
     </nav>
+    <script>
+      // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>

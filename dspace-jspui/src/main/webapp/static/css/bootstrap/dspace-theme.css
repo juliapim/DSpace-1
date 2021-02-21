@@ -11,15 +11,60 @@
 .blue{font-weight: bold; color: #164d98;}
 #panel-login{margin-top: 40px; }
 #log-in{width: 50%;}
-.form-search{width: 100%; display: flex;
+/* .form-search{width: 100%; display: flex;
     justify-content: center;}
 .form-search-group{width: 96%;}
 .input-search{width: 104%; height: 46px;}
-.button-search{width: 45px;}
+.button-search{width: 45px;} */
+.media-lista{display: none;}
 /* #panel-login-inner{background-color: #e9b820;} */
 .dissco-main{display: flex;justify-content: center;align-items: center;}
 .image-home{display: none;}
 .image-coll{display: none;}
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  .flex-subm{display: flex; width: 78.666667%;}
+  .arrow-img{margin-top: 26px;}
+  .lts-sub{width: 28vw;}
+  .submi{    display: flex;
+    flex-direction: column;align-items: center;}
+	
+  body{ font-family: 'Noto Sans', sans-serif;}
 ol.breadcrumb li {color: white; font-style: italic;}
 ol.breadcrumb li a {color: white; font-weight: bold; font-style: normal;}
 body.undernavigation {overflow-x: hidden; padding-top: 65px;}
