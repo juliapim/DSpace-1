@@ -170,9 +170,8 @@
                <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
                <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
                <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
               <li><!-- Trigger/Open The Modal -->
-                <button id="myBtn">Open Modal</button>
+                <a id="myBtn">FAQ</a>
                 
             </li>
 		<%
@@ -199,7 +198,7 @@
           <%-- Search Box --%>
 <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right form-search">
 	<div class="form-group form-search-group">
-	  <input type="text" class="form-control input-search" placeholder="Search DiSSCo-Knowledgebase" name="query" id="tequery" size="25"/>
+	  <input type="text" class="form-control input-search" placeholder="Search in DiSSCo-Knowledgebase" name="query" id="tequery" size="25"/>
 	</div>
 	<button type="submit" class="btn btn-primary button-search"><span class="glyphicon glyphicon-search"></span></button>
 <%--               <br/><a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a>
@@ -218,7 +217,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <p>FAQ</p>
       </div>
     
     </div>
@@ -237,6 +236,7 @@
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
       modal.style.display = "block";
+      
     }
     
     // When the user clicks on <span> (x), close the modal

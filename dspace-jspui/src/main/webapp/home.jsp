@@ -79,7 +79,7 @@
 		<%= topNews %>
 	</div>
 
-
+	<h2>You can also use the <a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a></h2>
 
 	<div class="row dissco-main">
 		<%
@@ -88,12 +88,12 @@ if (submissions != null && submissions.count() > 0)
 %>
 		<div class="col-md-8 flex-subm">
 			<div class="submi">
-				<h3 class="lts-sub">Checkout the latest submissions!</h3>
+				<h3 class="lts-sub">Check here the latest submissions!</h3>
 				<img class="arrow-img" height="93" src="<%= request.getContextPath() %>/image/arrow-svg-sub.png" alt="DiSSCo logo" />
 			</div>
 			<div class="panel panel-primary">
 				<div id="recent-submissions-carousel" class="panel-heading carousel slide">
-					<h3> Submissions
+					<h3 class="carous-subm"> Submissions
 						<!-- <fmt:message key="jsp.collection-home.recentsub"/> -->
 						<%
     if(feedEnabled)
@@ -119,7 +119,7 @@ if (submissions != null && submissions.count() > 0)
 	    	       width = 36;
 	    	    }
 	%>
-						<a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/site"><img
+						<a href="<%= request.getContextPath() %>/feed/<%= fmts[j] %>/site"><img class="rss-feed"
 								src="<%= request.getContextPath() %>/image/<%= icon %>" alt="RSS Feed"
 								width="<%= width %>" height="15" style="margin: 3px 0 3px" /></a>
 						<%

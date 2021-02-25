@@ -1,8 +1,12 @@
 body {
-    background-color: rgb(51 51 51 / 66%);
+    background-color: linear-gradient(to bottom,#9e9e9ec2 0,#9e9e9e2b 100%);
+    background-color: #222;
+    background-image: linear-gradient(to bottom,#9e9e9ec2 0,#9e9e9e2b 100%);
+    background-repeat: repeat-x;
+    border-color: #080808;
     color: white;
     margin: 0;
-    margin: 50px;
+    margin: 40px;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -14,17 +18,95 @@ form {
     display: flex;
     flex-direction: column;
     width: 60vw;
-    
+    align-items: baseline;
+
+
+}
+
+input {
+    height: 20px;
+    border-radius: 4px;
+}
+
+input,
+textarea {
+    margin: 6px;
+    width: 29%;
+    border-radius: 4px;
+    display: block;
+    background-color: rgb(51 51 51 / 0%);
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
 }
 
 h3 {
-    color: #e9b820;
+    color: #ffd34c;
+}
+
+label {
+    margin-left: 9px;
 }
 
 section {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 0;
+   border-radius: 20px;
+    background: cadetblue;
+    margin-top: 64px;
+    padding: 30px;
+
 }
+
+.image-search {
+    border-radius: 10px;
+}
+
+strong {
+    font-size: 17px;
+}
+
+li {
+    list-style-type: none;
+    padding: 11px;
+}
+.feedback-link{
+    text-decoration: none;
+    color: white;
+    background: #e6bf5db3;
+    padding: 3px;
+    border-radius: 25px;
+}
+.feedback-link:hover{
+    padding: 5px;
+}
+
+/* .about {
+    width: 43vw;
+}
+.browse{
+    width: 294vh;
+} */
