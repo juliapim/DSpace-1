@@ -69,7 +69,7 @@
                             <p>Funded by the Horizon 2020 Framework Programme of the European Union</p>
                         </div>
                         <li><!-- Trigger/Open The Modal -->
-                            <a id="myBtn">FAQ</a>
+                            
                             
                         </li>
 
