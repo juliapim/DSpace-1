@@ -78,8 +78,16 @@
 	<div class="jumbotron">
 		<%= topNews %>
 	</div>
-
-	<h2>You can also use the <a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a></h2>
+	<h3 class="proj">Projects</h3>
+	<div class="projects-dissco">
+		<a href="http://localhost:8080/jspui/handle/123456789/7"><img  class="p-diss" width="130" src="<%= request.getContextPath() %>/image/dissco-prepare.jpg" alt="Card image cap"></a>
+		<a href="http://localhost:8080/jspui/handle/123456789/9"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/envri.jpg" alt="Card image cap"></a>
+		<a href="http://localhost:8080/jspui/handle/123456789/4"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/icedig-eu.jpg" alt="Card image cap"></a>
+		<a href="http://localhost:8080/jspui/handle/123456789/8"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/mobilise.jpg" alt="Card image cap"></a>
+		<a href="http://localhost:8080/jspui/handle/123456789/6"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/synthesys-1.jpg" alt="Card image cap"></a>
+		
+	  </div>
+	<!-- <h3>You can also use the <a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a></h3> -->
 
 	<div class="row dissco-main">
 		<%

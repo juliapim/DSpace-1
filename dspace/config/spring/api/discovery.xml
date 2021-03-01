@@ -337,8 +337,8 @@
 		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 1.1 -->
 		<!-- <property name="fontFrom" value="1.1"/>-->
 		
-		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 3.2 -->
-		<!-- <property name="fontTo" value="3.2"/>-->
+		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 2.2 -->
+		<!-- <property name="fontTo" value="2.2"/>-->
 		
 		<!-- The score that tags with lower than that will not appear in the rag cloud. Possible values: any integer from 1 to infinity. Default: 0 -->
 		<!-- <property name="cuttingLevel" value="0"/>-->
@@ -371,8 +371,8 @@
 		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 1.1 -->
 		<!-- <property name="fontFrom" value="1.1"/>-->
 		
-		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 3.2 -->
-		<!-- <property name="fontTo" value="3.2"/>-->
+		<!-- The font size (in em) for the tag with the lowest score. Possible values: any decimal. Default: 2.2 -->
+		<!-- <property name="fontTo" value="2.2"/>-->
 		
 		<!-- The tags with score lower than this will not appear in the tag cloud. Possible values: any integer from 1 to infinity. Default: 0 -->
 		<!-- <property name="cuttingLevel" value="0"/>-->

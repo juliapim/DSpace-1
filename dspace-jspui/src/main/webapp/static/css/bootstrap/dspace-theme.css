@@ -21,6 +21,26 @@
 .dissco-main{display: flex;justify-content: center;align-items: center;}
 .image-home{display: none;}
 .image-coll{display: none;}
+.projects-dissco{
+	display: flex;
+	justify-content: space-evenly;
+	height: 24vh;
+	align-items: center;
+	border: 1px solid #80808069;
+    min-height: 191px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
+.proj{
+	font-weight: bold;
+	color: #164d98;
+    text-align: center;
+	margin-bottom: 20px;
+}
+.p-diss:hover{
+	border: 1px solid;
+    border-radius: 9px
+}
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -148,6 +168,7 @@ div.tagcloud .tagcloud_1{
 	color: rgb(217, 108, 39); 
 	font-weight: normal; 
 	margin-right: 5px;
+	font-size: 2.3em;
 }
 
 div.tagcloud .tagcloud_2{
