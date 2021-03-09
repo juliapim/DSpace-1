@@ -5,6 +5,12 @@
  *
  * http://www.dspace.org/license/
  */
+ a{
+	 text-decoration: none;
+ }
+ a:hover{
+	 text-decoration: none;
+ }
 .banner img {background-color: #FFFFFF;padding:15px;margin:20px;}
 .brand {padding-top: 30px;}
 .brand h4 {color: #999999}
@@ -19,7 +25,7 @@
 .media-lista{display: none;}
 /* #panel-login-inner{background-color: #e9b820;} */
 .dissco-main{display: flex;justify-content: center;align-items: center;}
-.image-home{display: none;}
+/* .image-home{display: none;} */
 .image-coll{display: none;}
 .projects-dissco{
 	display: flex;
@@ -37,10 +43,48 @@
     text-align: center;
 	margin-bottom: 20px;
 }
+.sub-none{
+	display: none;
+}
+.none-home{
+	display: none;
+}
+.container-div{
+	display: flex;
+	justify-content: center;
+}
 .p-diss:hover{
 	border: 1px solid;
     border-radius: 9px
 }
+.news-home{
+	display: flex;
+    flex-direction: column;
+}
+.proj-kb, .proj2-kb{
+	text-align: center;
+}
+.proj2-kb{
+	margin-bottom: 31px;
+}
+.proj-boxes{
+	height: 98px;
+}
+
+
+.dissco-newso {
+	align-self: flex-end;
+    padding: 7px;
+    /* margin-left: 36vw; */
+    background: #e9b820a6;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -79,7 +123,7 @@
 	text-decoration: none;
 	cursor: pointer;
   }
-  .flex-subm{display: flex; width: 78.666667%;}
+  /* .flex-subm{display: flex; width: 78.666667%;} */
   .arrow-img{margin-top: 26px;}
   .lts-sub{width: 28vw;}
   .submi{    display: flex;
@@ -89,9 +133,14 @@
   #myBtn :hover{
 	  cursor: pointer;
   }
-  .dissco-news:hover {
+  /* .dissco-news:hover {
 	color: rgba(52, 52, 121, 0.637);
 	text-decoration: none;
+  } */
+  .dissco-newso:hover {
+	background-color: #3CAFCA;
+	text-decoration: none;
+	color: white;
   }
   .rss-feed{display: none;}
   .carous-subm{
@@ -104,7 +153,8 @@ body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
 #designedby {padding: 5px;justify-content: center; }
 #designedby-2 {flex-direction: column}
-#eu {margin-left: 18px;}
+#eu {margin: 18px;}
+#help{display: none;}
 /* #footer_feedback {padding-top: 12px;} */
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}

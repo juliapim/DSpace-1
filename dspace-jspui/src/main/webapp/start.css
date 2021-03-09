@@ -62,9 +62,10 @@ textarea {
 }
 
 h2 {
-    background: #f1bf47;
+    
     padding: 8px;
     border-radius: 15px;
+    color: #00000091;
     
 }
 
@@ -74,7 +75,7 @@ label {
 
 section { 
    border-radius: 20px;
-    background:#2FB1B6;
+    background:#3CAFCA;
     margin-top: 48px;
     padding: 30px;
 
