@@ -38,7 +38,11 @@ echo $dsname Handle Server >>$tempfile  # Server description
 echo $dsname >>$tempfile # Server descriptive name
 echo "" >>$tempfile   # Contact name (default=none)
 echo "" >>$tempfile   # Contact telephone (default=none)
-echo $contactemail >>$tempfile   # Contact email
+echo $contact
+
+
+
+ >>$tempfile   # Contact email
 echo "" >>$tempfile   # Block UDP access?  ("y" or "n", default=n)
 echo "n" >>$tempfile  # Do not encrypt server cert private key
                       # OR do not overwrite old server cert private key

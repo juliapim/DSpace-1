@@ -153,7 +153,7 @@ body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #content {padding-bottom:60px;}
 #designedby {padding: 5px;justify-content: center; }
 #designedby-2 {flex-direction: column}
-#eu {margin: 18px;}
+#eu {margin: 18px;margin-right: -6px;}
 #help{display: none;}
 /* #footer_feedback {padding-top: 12px;} */
 input[type="file"] {display: block;height: auto;}
