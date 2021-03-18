@@ -36,6 +36,8 @@ META-INF/
 /local.cfg
 # Also ignore it under dspace/config
 /dspace/config/local.cfg
+/dspace/config/dspace.cfg
+/backups
 
 ##Mac noise
 .DS_Store

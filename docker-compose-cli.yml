@@ -20,7 +20,7 @@ services:
     - ./dspace/src/main/docker-compose/local.cfg:/dspace/config/local.cfg
     - assetstore:/dspace/assetstore
     entrypoint: /dspace/bin/dspace
-    command: help
+    command: help   
     networks:
       - dspacenet
     tty: true

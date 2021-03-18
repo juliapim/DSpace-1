@@ -155,6 +155,9 @@ body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 #designedby-2 {flex-direction: column}
 #eu {margin: 18px;margin-right: -6px;}
 #help{display: none;}
+.uri{
+	display: none;
+}
 /* #footer_feedback {padding-top: 12px;} */
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
