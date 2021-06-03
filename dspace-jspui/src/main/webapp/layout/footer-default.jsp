@@ -65,8 +65,10 @@
   <div id="designedby-2" class="container text-muted">
     <p>H2020-INFRADEV-2019-2020 – Grant Agreement No. 871043.</p>
     <p>Funded by the Horizon 2020 Framework Programme of the European Union</p>
+    <p><strong>FAQ</strong></p>
+    
     <p><strong>Contact</strong></p>
-    <p> DiSSCo Knokledgebase Coordination & Support Office</p>
+    <p> DiSSCo Knowledgebase Coordination & Support Office</p>
     <p><strong>disscokb@gmail.com</strong> </p>
   </div>
   <li>
@@ -76,34 +78,7 @@
   </li>
 
   </div>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
 </footer>
 

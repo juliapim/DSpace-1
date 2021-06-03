@@ -78,17 +78,6 @@
 	<div class="jumbotron news-home">
 		<%= topNews %>
 	</div>
-	
-	<!-- <h3 class="proj">Projects</h3>
-	<div class="projects-dissco">
-		<a href="https://dissco-kb.naturkundemuseum.berlin/jspui/handle/123456789/7"><img  class="p-diss" width="130" src="<%= request.getContextPath() %>/image/dissco-prepare.jpg" alt="Card image cap"></a>
-		<a href="https://dissco-kb.naturkundemuseum.berlin/jspui/handle/123456789/9"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/envri.jpg" alt="Card image cap"></a>
-		<a href="https://dissco-kb.naturkundemuseum.berlin/jspui/handle/123456789/4"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/icedig-eu.jpg" alt="Card image cap"></a>
-		<a href="https://dissco-kb.naturkundemuseum.berlin/jspui/handle/123456789/8"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/mobilise.jpg" alt="Card image cap"></a>
-		<a href="https://dissco-kb.naturkundemuseum.berlin/jspui/handle/123456789/6"><img class="p-diss" width="130" src="<%= request.getContextPath() %>/image/synthesys-1.jpg" alt="Card image cap"></a>
-		
-	  </div> -->
-	<!-- <h3>You can also use the <a href="<%= request.getContextPath() %>/advanced-search"><fmt:message key="jsp.layout.navbar-default.advanced"/></a></h3> -->
 
 	<div class="row dissco-main ">
 		<%
@@ -254,31 +243,5 @@ if (communities != null && communities.size() != 0)
 </div> -->
 	
 </div>
-	<script>
-		// Get the modal
-		var modal = document.getElementById("myModal");
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("myBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on the button, open the modal
-		btn.onclick = function () {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function () {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function (event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-	</script>
+	
 </dspace:layout>

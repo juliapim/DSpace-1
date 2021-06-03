@@ -1,11 +1,8 @@
 <%--
-
     The contents of this file are subject to the license and copyright
     detailed in the LICENSE and NOTICE files at the root of the source
     tree and available online at
-
     http://www.dspace.org/license/
-
 --%>
 <%--
   - Default navigation bar
@@ -34,17 +31,14 @@
 <%
     // Is anyone logged in?
     EPerson user = (EPerson) request.getAttribute("dspace.current.user");
-
     // Is the logged in user an admin
     Boolean admin = (Boolean)request.getAttribute("is.admin");
     boolean isAdmin = (admin == null ? false : admin.booleanValue());
-
     Boolean communityAdmin = (Boolean)request.getAttribute("is.communityAdmin");
     boolean isCommunityAdmin = (communityAdmin == null ? false : communityAdmin.booleanValue());
     
     Boolean collectionAdmin = (Boolean)request.getAttribute("is.collectionAdmin");
     boolean isCollectionAdmin = (collectionAdmin == null ? false : collectionAdmin.booleanValue());
-
     // Get the current page, minus query string
     String currentPage = UIUtil.getOriginalURL(request);
     int c = currentPage.indexOf( '?' );
@@ -52,10 +46,8 @@
     {
         currentPage = currentPage.substring( 0, c );
     }
-
     // E-mail may have to be truncated
     String navbarEmail = null;
-
     if (user != null)
     {
         navbarEmail = user.getEmail();
@@ -115,13 +107,14 @@
 				%>
 				    
 				<%-- End of dynamic browse indices --%>
-
             </ul>
           </li>
+          <li class="<%= currentPage.endsWith("/form.jsp")? "active" : "" %>"><a
+            href="<%= request.getContextPath() %>/feedback">
+            <fmt:message key="jsp.layout.navbar-default.feedback" /></a></li>
           <li id="help" class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.index\") %>"><fmt:message key="jsp.layout.navbar-default.help"/></dspace:popup></li>
          
        </ul>
-
  <% if (supportedLocales != null && supportedLocales.length > 1)
      {
  %>
@@ -167,8 +160,10 @@
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <fmt:message key="jsp.layout.navbar-default.sign"/> <b class="caret"></b></a>
 	<% } %>             
              <ul class="dropdown-menu">
+              
                <li><a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.layout.navbar-default.users"/></a></li>
-               <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li>
+               <li><a href="<%= request.getContextPath() %>/register"><fmt:message key="jsp.components.login-form.registernav"/></a></li>
+               <!-- <li><a href="<%= request.getContextPath() %>/subscribe"><fmt:message key="jsp.layout.navbar-default.receive"/></a></li> -->
                <li><a href="<%= request.getContextPath() %>/profile"><fmt:message key="jsp.layout.navbar-default.edit"/></a></li>
               <li><!-- Trigger/Open The Modal -->
                 <!-- <a id="myBtn">FAQ</a> -->
@@ -223,31 +218,3 @@
     </div>
 </div>
     </nav>
-    <script>
-      // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-      
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>

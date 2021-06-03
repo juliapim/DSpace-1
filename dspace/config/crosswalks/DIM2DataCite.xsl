@@ -23,7 +23,7 @@
     <!-- DO NOT CHANGE ANYTHING BELOW THIS LINE EXCEPT YOU REALLY KNOW WHAT YOU ARE DOING! -->
     
     <!-- We need the prefix to determine DOIs that were minted by ourself. -->
-    <xsl:param name="prefix">10.34960/dspace-</xsl:param>
+    <xsl:param name="prefix">10.5072/dspace-</xsl:param>
     <!-- The content of the following parameter will be used as element publisher. -->
     <xsl:param name="publisher">My University</xsl:param>
     <!-- The content of the following variable will be used as element contributor with contributorType datamanager. -->
@@ -332,7 +332,6 @@
     <!--
         DataCite (6), DataCite (6.1)
         Adds subject and subjectScheme information
-
         "This term is intended to be used with non-literal values as defined in the
         DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).
         As of December 2007, the DCMI Usage Board is seeking a way to express
@@ -505,7 +504,6 @@
         DataCite (11), DataCite (11.1)
         Adds AlternativeIdentifier and alternativeIdentifierType information
         Adds all identifiers except the doi.
-
         This element is important as it is used to recognize for which DSpace
         objet a DOI is reserved for. The DataCiteConnector will test all
         AlternativeIdentifiers by using HandleManager.

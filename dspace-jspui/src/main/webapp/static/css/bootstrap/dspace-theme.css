@@ -67,9 +67,7 @@
 .proj2-kb{
 	margin-bottom: 31px;
 }
-.proj-boxes{
-	height: 98px;
-}
+
 
 
 .dissco-newso {
@@ -158,6 +156,10 @@ body.undernavigation {overflow-x: hidden; padding-top: 65px;}
 .uri{
 	display: none;
 }
+.dissco-webs{
+	color: #3CAFCA;
+}
+
 /* #footer_feedback {padding-top: 12px;} */
 input[type="file"] {display: block;height: auto;}
 div.panel-primary div.panel-heading a {color: white;}
