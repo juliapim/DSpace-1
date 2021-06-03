@@ -45,7 +45,7 @@
          <repeatable>true</repeatable>
          <label>Authors</label>
          <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item.</hint>
+         <hint>Authors of the resource (e.g. publication) in priority order or main persons involved working on the code, deliverable or milestones. This may be the name of a person or an institution/organization.</hint>
          <required></required>
        </field>
 
@@ -56,7 +56,7 @@
          <repeatable>false</repeatable>
          <label>Title</label>
          <input-type>onebox</input-type>
-         <hint>Enter the main title of the item.</hint>
+         <hint>Title of the project output (e.g. title of a Deliverable or Milestone).</hint>
          <required>You must enter a main title for this item.</required>
        </field>
 
@@ -94,6 +94,17 @@
          <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
          <required></required>
        </field>
+
+       <field>
+        <dc-schema>dc</dc-schema>
+        <dc-element>identifier</dc-element>
+        <dc-qualifier>doi</dc-qualifier>
+        <repeatable>false</repeatable>
+        <label>DOI</label>
+        <input-type>onebox</input-type>
+        <hint>Identifiers of related resources (DOI).</hint>
+        <required></required>
+      </field>
 
        <field>
          <dc-schema>dc</dc-schema>
