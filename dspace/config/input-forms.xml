@@ -84,6 +84,17 @@
          <required>You must enter at least the year.</required>
        </field>
 
+       <!-- <field>
+        <dc-schema>dcterms</dc-schema>
+        <dc-element></dc-element>
+        <dc-qualifier>hasVersion</dc-qualifier>
+        <repeatable>false</repeatable>
+        <label>Version</label>
+        <input-type>onebox</input-type>
+        <hint>Version number of the resource.</hint>
+        <required>You must enter at least the number.</required>
+      </field> -->
+
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>publisher</dc-element>
