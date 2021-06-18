@@ -86,7 +86,7 @@
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
          <ul class="nav navbar-nav">
            <li class="<%= currentPage.endsWith("/home.jsp")? "active" : "" %>"><a href="<%= request.getContextPath() %>/"><span class="glyphicon glyphicon-home"></span> <fmt:message key="jsp.layout.navbar-default.home"/></a></li>
-           <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.start\") %>"><fmt:message key="jsp.layout.navbar-default.start"/></dspace:popup></li>  
+           
            <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><fmt:message key="jsp.layout.navbar-default.browse"/> <b class="caret"></b></a>
              <ul class="dropdown-menu">
@@ -109,6 +109,7 @@
 				<%-- End of dynamic browse indices --%>
             </ul>
           </li>
+          <li class="<%= ( currentPage.endsWith( "/help" ) ? "active" : "" ) %>"><dspace:popup page="<%= LocaleSupport.getLocalizedMessage(pageContext, \"help.start\") %>"><fmt:message key="jsp.layout.navbar-default.start"/></dspace:popup></li> 
           <li class="<%= currentPage.endsWith("/form.jsp")? "active" : "" %>"><a
             href="<%= request.getContextPath() %>/feedback">
             <fmt:message key="jsp.layout.navbar-default.feedback" /></a></li>
