@@ -242,7 +242,7 @@
 
 		<h3><fmt:message key="jsp.community-home.heading3"/></h3>
    
-        <div class="list-group">
+        <div class="list-groupe">
 <%
         for (int j = 0; j < subcommunities.size(); j++)
         {
@@ -298,7 +298,7 @@
 
         <%-- <h2>Collections in this community</h2> --%>
 		<h3><fmt:message key="jsp.community-home.heading2"/></h3>
-		<div class="list-group">
+		<div class="list-groupe">
 <%
         for (int i = 0; i < collections.size(); i++)
         {

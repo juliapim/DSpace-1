@@ -181,6 +181,7 @@ if (submissions != null && submissions.count() > 0)
     <%= sideNews %>
 </div> -->
 
+
 	</div>
 	<div class="container row container-div">
 <%
@@ -191,8 +192,18 @@ if (communities != null && communities.size() != 0)
                <h3 class="proj-kb">
 				   <fmt:message key="jsp.home.com1"/>
 				</h3>
-                <p class="proj2-kb"><fmt:message key="jsp.home.com2"/></p>
-				<div class="list-group">
+				<div class="home-projects">
+					<div class="home-box"><a href="http://localhost:8080/handle/item/1">Good to Know!</a></div>
+					<div class="home-box"><a href="http://localhost:8080/handle/item/4">DiSSCo Linked Projects</a></div>
+					<div class="home-box"><a href="http://localhost:8080/handle/123456789/10">DiSSCo Policies</a></div>
+					<div class="home-box"><a href="https://github.com/DiSSCo">DiSSCo GitHub</a></div>
+				
+				</div>
+				<!-- <p class="proj2-kb"><fmt:message key="jsp.home.com2"/></p> -->
+				
+				
+				
+				<div class="list-group" id="list-group">
 <%
 	boolean showLogos = configurationService.getBooleanProperty("jspui.home-page.logos", true);
     for (Community com : communities)
@@ -243,5 +254,6 @@ if (communities != null && communities.size() != 0)
 </div> -->
 	
 </div>
+
 	
 </dspace:layout>

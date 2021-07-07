@@ -382,7 +382,7 @@
     {
 %>
     <p class="submitFormHelp alert alert-info"><fmt:message key="jsp.display-item.text3"/> <a href="<%= cc_url %>"><fmt:message key="jsp.display-item.license"/></a>
-    <a href="<%= cc_url %>"><img src="<%= request.getContextPath() %>/image/cc-somerights.gif" border="0" alt="Creative Commons" style="margin-top: -5px;" class="pull-right"/></a>
+    <a href="<%= cc_url %>"><img src="<%= request.getContextPath() %>/image/cc_image.png" border="0" alt="Creative Commons" style="margin-top: -5px;" class="pull-right"/></a>
     </p>
     <!--
     <%= cc_rdf %>

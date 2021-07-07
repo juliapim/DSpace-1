@@ -68,7 +68,12 @@
 	margin-bottom: 31px;
 }
 
-
+.home-box{
+	border: none;
+    height: 10vh;
+    border-radius: 4px;
+    width: 10vw;
+}
 
 .dissco-newso {
 	align-self: flex-end;
